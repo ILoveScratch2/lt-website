@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LightType</title>
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="github.min.css">
+    <script src="marked.min.js"></script>
+    <script src="highlight.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="toolbar">
+            <div class="toolbar-left">
+                <div class="toolbar-title">LightType</div>
+            </div>
+            <div class="view-toggle">
+                <button id="code-view" class="active"> 代码</button>
+                <button id="split-view"> 拆分</button>
+                <button id="preview-view"> 预览</button>
+            </div>
+            <select id="theme-select" class="theme-select">
+              <option value="light">Light</option>
+              <option value="dark">Dark</option>
+              <option value="one-dark-pro">One Dark Pro</option>
+              <option value="solarized-light">Solarized Light</option>
+              <option value="solarized-dark">Solarized Dark</option>
+              <option value="dracula">Dracula</option>
+              <option value="quiet-light">Quiet Light</option>
+              <option value="night-blue">Night Blue</option>
+            </select>
+        </div>
+        <div class="editor-container">
+            <div class="editor-panel full-width">
+                <div class="panel-header">编辑</div>
+                <div class="editor-wrapper">
+                    <div class="line-numbers"></div>
+                    <textarea id="markdown-input" placeholder="在此输入 Markdown 内容..."></textarea>
+                </div>
+            </div>
+            <div class="preview-panel hidden">
+                <div class="panel-header">预览</div>
+                <div id="preview" class="preview"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js">
+    </script>
+</body>
+</html>
